@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ngotuan1994.github.io/react-searchbox",
+  "homepage": "https://react-searchbox.ericngo.dev",
   "name": "react-searchbox",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "copy" : "cp ./CNAME ./build/CNAME",
+    "predeploy": "npm run build && npm run copy",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
